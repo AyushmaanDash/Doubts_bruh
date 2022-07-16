@@ -15,26 +15,7 @@ int main()
     
     // checking the number of bits required
     
-    int bits;
-    
-    int j =0;
-    int check = pow(2,j) ;
-    int flag = 0;
-    
-    while(check <= num)
-    {
-        if(check == num)
-        {
-            flag =1;
-            bits = ceil(log2(num)) + 1;
-        }
-        
-        j++;
-        check = pow(2,j);
-    }
-    
-	if(!flag)
-        bits = ceil(log2(num));
+    int bits = ceil(log2(num+1));
     
     int binary = 0;
     int i =0;
